@@ -26,5 +26,5 @@ func CollectMetrics(collector Collector) []prometheus.Metric {
 
 // check interfaces
 var (
-	_, Collector = prometheus.Collector(nil)
+	_ Collector = prometheus.Collector(nil)
 )
